@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kabz Tech| ACCOUNT</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+     function showRegister() {
+         document.getElementById("login-box").style.display = "none";
+         document.getElementById("register-box").style.display = "block";
+          }
+
+      function showLogin() {
+       document.getElementById("register-box").style.display = "none";
+       document.getElementById("login-box").style.display = "block";
+      }
+    </script>
+
+</head>
+<body>
+    <header>
+       <section class="logo">
+            <img src="images/logo.jpg"width="125px" alt="logo.jpg">
+          </section>    
+         <nav>
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>  
+                <li><a href="Checkout.html">Checkout</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="contact.html">contact</a></li> 
+            </ul>
+        </nav>    
+    </header>
+     <main>
+    <section class="account-page">
+      <h2>My Account</h2>
+
+      <!-- Login Box -->
+      <div id="login-box" class="form-box">
+        <h3>LOGIN</h3>
+        <form>
+          <label>Email:</label>
+          <input type="email" name="login-email" required>
+
+          <label>Password:</label>
+          <input type="password" name="login-password" required>
+
+          <input type="submit" value="Login">
+        </form>
+        <p>Not registered? <button type="button" onclick="showRegister()">Create an account</button></p>
+      </div>
+
+      <!-- Register Box -->
+      <div id="register-box" class="form-box" style="display:none;">
+        <h3>Sign Up</h3>
+        <form>
+          <label>Full Name:</label>
+          <input type="text" name="signup-name" required>
+
+          <label>Email:</label>
+          <input type="email" name="signup-email" required>
+
+          <label>Password:</label>
+          <input type="password" name="signup-password" required>
+
+          <input type="submit" value="Register">
+        </form>
+        <p>Already have an account? <button type="button" onclick="showLogin()">Login here</button></p>
+      </div>
+    </section>
+  </main>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--footer-->
+    <footer> 
+      <p>@KABZ TECH.All rights reserved</p>
+    </footer>
+      
+</body>
+</html>
